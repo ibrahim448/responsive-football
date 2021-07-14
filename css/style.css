@@ -1,0 +1,299 @@
+/*================GOOGLE FONT==============  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*================GOOGLE FONT==============  */
+
+/*==================COMMON STYLE============= */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+/*============HEADER PART START================ */
+.header{
+    background-color:  #2D25A0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu ul li a{
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 35px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 8px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-size: 16px;
+    margin-right: 121px;
+    padding: 10px 24px;
+}
+.banner-title h1{
+    color: #FFFFFF;
+    font-size: 64px;
+    margin-left: 38px;
+    margin-top: 100px;
+    margin-bottom: 27px;
+}
+.banner-icon{
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color:#E02C6D;
+    margin-left: 38px;
+    padding: 10px 24px;
+    margin-bottom: 169px;
+}
+.fa-arrow-right{
+    padding-left: 8px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+.banner img{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 60px;
+    margin-right: 140px;
+    transition: width 1s, height 5s, transform 5s; 
+}
+.banner img:hover{
+    transform: rotate(360deg);
+}
+/*============HEADER PART END================ */
+
+/*============MAIN PART START================ */
+main{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+/*============MATCH WINNER PART START================ */
+.container{
+    width: 1090px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 27px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding-bottom: 30px;
+}
+.player img{
+    display: block;
+    width: 300px;
+    height: 256px;
+    margin: 14px auto;
+}
+.player-info{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.player-title{
+    color: #18191F;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-info p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 0;
+}
+/*============MATCH WINNER PART END================ */
+
+/*============LIVE CHANNEL PART START================ */
+.live-channel{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+}
+.section-title{
+    color: crimson;
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 6px;
+}
+.live-channel p{
+    color: #6C6C6C;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 15px;
+}
+.channels{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 15px;
+   grid-row-gap: 15px;
+}
+.channel{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.channel img{
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.channel:hover img{
+    transform: scale(1.5);
+}
+/*============LIVE CHANNNEL PART END================ */
+
+/*============TOP PLAYER PART START================ */
+.top-player{
+    margin-top: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.tournament-player p{
+    color: #6C6C6C;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+    width: 600px; 
+    margin-bottom: 28px;
+}
+.hot-player{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 25px;
+   grid-row-gap: 20px;
+}
+.favorite-player{
+    display: flex;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    border-radius: 10px;
+    align-items: center;
+    grid-column-gap: 15px;
+    transition: 0.5s;
+}
+.favorite-player:hover{
+    background-color: darkgray;
+}
+.favorite-player img{
+    width: 300px;
+    height: 256px;
+    border-radius: 10px;
+}
+.name{
+    color: #18191F;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+.country{
+    color: #18191F;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+.fa-star.filled{
+    color: crimson;
+}
+/*============TOP PLAYER PART END================ */
+
+/*============HIGHLITS PART START================ */
+.copa-america{
+    margin-top: 150px;
+}
+.highlite{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+}
+.match-title{
+   margin-top: 30px;
+}
+.match-title h1{
+    color: #0A0826;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.match-title p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 8px;
+}
+.my-style{
+    margin: 0;
+}
+
+.thumbnail img{
+    width: 567px;
+    height: 427px;
+}
+/*============HIGHLITS PART END================ */
+/*============MAIN PART END================ */
+
+
+/*============FOOTER PART START================ */
+.footer{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer img{
+    width: 483.87px;
+    height: 110px;
+    display: block;
+    margin: auto;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+}
+.footer-icon span{
+    background: #0B0D17;
+    opacity: 0.4;
+    color: #969BAB;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;  
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 3px;
+}
+.footer p{
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 50px;
+}
+.footer p span{
+    color: crimson;
+}
+/*============FOOTER PART END================ */
