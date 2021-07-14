@@ -9,6 +9,10 @@ body{
     padding: 0;
     margin: 0;
 }
+.container{
+    width: 1090px;
+   
+}
 
 /*============HEADER PART START================ */
 .header{
@@ -82,22 +86,18 @@ main{
     display: grid;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-top: 40px;
-}
+} 
 /*============MATCH WINNER PART START================ */
-.container{
-    width: 1090px;
-}
+
+
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 15px;
     grid-row-gap: 27px;
 }
 .player{
-    width: 330px;
-    height: 474px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding-bottom: 30px;
@@ -124,6 +124,7 @@ main{
     line-height: 26px;
     margin-top: 0;
 }
+
 /*============MATCH WINNER PART END================ */
 
 /*============LIVE CHANNEL PART START================ */
@@ -137,7 +138,7 @@ main{
     font-size: 44px;
     margin-bottom: 6px;
 }
-.live-channel p{
+.live-football-match p{
     color: #6C6C6C;
     font-size: 16px;
     margin: auto;
@@ -296,4 +297,173 @@ main{
 .footer p span{
     color: crimson;
 }
-/*============FOOTER PART END================ */
+
+/*===============MEDIA QUERY======================= */
+
+/*==================MOBILE DEVICE========================== */
+
+@media only screen and (max-width:668px) {
+    .container{
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .banner-icon{
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
+    .banner, .players, .channels, .hot-player, .highlite{
+        grid-template-columns: 1fr;
+    }
+    .banner-title h1{
+        font-size: 21px;
+        margin-left: 10px;
+    }
+    .banner img{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin-left: 5px;
+    }
+    .player{
+        margin: 0 10px;
+        padding: 0px 13px;
+    }
+    .player img{
+        width: 100%;
+        height: auto;
+    }
+    .player-info{
+        padding-left: 3px;
+    }
+    .section-title{
+        font-size: 21px;
+    }
+    .live-football-match p, .tournament-player p{
+        color: #6C6C6C;
+        font-size: 12px;
+        margin: auto;
+        width: 180px;
+        padding-bottom: 15px;
+    }
+    .channel{
+        margin: 0px 12px;
+    }
+    .channel img{
+        width: 100%;
+        height: auto;
+    }
+    .favorite-player{
+        margin: 0px 12px;
+    }
+    .favorite-player img{
+        width: 100%;
+        height: auto;
+    }
+    .favorite-player{
+        flex-direction: column;
+    }
+    .rating{
+        padding-bottom: 8px;
+    }
+    .copa-america{
+        margin-top: 30px;
+    }
+    .match-title{
+        width: 100%;
+        height: auto;
+    }
+    .match-title h1{
+        font-size: 21px;
+        margin: 0px 12px;
+    }
+    .match-title p{
+        margin: 0px 12px;
+        margin-bottom: 15px;
+    }
+    .thumbnail{
+        margin: 0px 12px;
+    }
+    .thumbnail img{
+        width: 100%;
+        height: auto;
+    }
+    .footer img{
+        width: 80%;
+        height: auto;
+    }
+   
+/*=======================TABLET DEVICE================= */
+
+@media only screen and (min-width:668px) and (max-width:992px) {
+   .container{
+       width: 100%;
+   }
+   .nav{
+        flex-direction: column;
+    }
+    .banner img{
+        width: 450.01px;
+        height: 300px;
+        margin-top: 20px;
+        margin-left: 170px;
+        margin-bottom: 30px;
+    }
+    .banner, .channels, .hot-player, .highlite{
+        grid-template-columns: 1fr;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 14px;
+    }
+    .player{
+        margin: 5px auto;
+    }
+    .section-title {
+        font-size: 25px;
+    }
+    .channel{
+        margin: 0px 14px;
+    }
+    .live-football-match p, .tournament-player p{
+        color: #6C6C6C;
+        font-size: 12px;
+        margin: auto;
+        width: 200px;
+        padding-bottom: 15px;
+    }
+    .rating{
+        padding-bottom: 10px;
+    }
+    .favorite-player{
+        flex-direction: column;
+        margin: 0px 14px;
+    }
+    .favorite-player img{
+        width: 100%;
+        height: auto;
+    }
+    .match-title{
+        padding: 0 15px;
+    }
+    .match-title h1{
+        text-align: center;
+    }
+    .banner-icon{
+       margin-bottom: 15px;
+    }
+    .thumbnail{
+        margin: 0 14px;
+    }
+    .thumbnail img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+}
